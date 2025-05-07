@@ -1,0 +1,2 @@
+echo "3.10" > .python-version  # Use Python 3.10 (LTS version)
+git rm runtime.txt  # Remove deprecated file
