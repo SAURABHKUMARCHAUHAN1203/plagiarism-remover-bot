@@ -1,22 +1,22 @@
 {
   "name": "Plagiarism Remover Bot",
-  "description": "A Telegram bot that removes plagiarism using AI paraphrasing models.",
+  "description": "Telegram bot for AI-powered paraphrasing",
   "repository": "https://github.com/SAURABHKUMARCHAUHAN1203/plagiarism-remover-bot",
   "logo": "https://img.icons8.com/color/96/000000/paraphrase.png",
-  "keywords": ["telegram", "bot", "plagiarism", "ai", "python"],
+  "keywords": ["telegram", "ai", "plagiarism"],
   "env": {
     "TELEGRAM_TOKEN": {
-      "description": "Your Telegram Bot Token (from @BotFather)",
+      "description": "From @BotFather",
       "required": true
     },
     "OPENAI_API_KEY": {
-      "description": "OpenAI API Key (optional, for GPT-3.5)",
+      "description": "Optional for GPT-3.5",
       "required": false
     }
   },
   "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
+    { "url": "heroku/python" },
+    { "url": "https://github.com/heroku/heroku-buildpack-apt" },
+    { "url": "https://github.com/weibeld/heroku-buildpack-run" }
   ]
 }
