@@ -4,6 +4,4 @@ sentencepiece==0.1.99
 language-tool-python==2.7
 flask==2.2.3
 gunicorn==20.1.0
-
-# Updated PyTorch installation line:
 torch==2.0.1 --index-url https://download.pytorch.org/whl/cpu
