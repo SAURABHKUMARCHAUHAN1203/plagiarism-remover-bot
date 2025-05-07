@@ -1,31 +1,18 @@
 # Plagiarism Remover Telegram Bot 🤖✍️
 
-A Telegram bot that removes plagiarism by paraphrasing text using multiple AI models (T5, Pegasus, BART, and GPT-3.5). Hosted on Heroku.
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SAURABHKUMARCHAUHAN1203/plagiarism-remover-bot)
 
-## Features ✨
-✅ **Multi-Model Paraphrasing** (T5 + Pegasus + BART + GPT-3.5)  
-✅ **Grammar Correction** (LanguageTool integration)  
-✅ **High-Quality Output** (Ensemble model selection)  
-✅ **Easy Heroku Deployment** (One-click setup)  
+## One-Click Deployment
+1. Click the **Deploy button** above
+2. Set these environment variables in Heroku:
+   - `TELEGRAM_TOKEN` (from [@BotFather](https://t.me/BotFather))
+   - `OPENAI_API_KEY` (optional, for GPT-3.5)
+3. Wait for build to complete (takes 5-7 minutes)
 
-## Setup 🛠️
-
-### 1. Prerequisites
-- Telegram Bot Token (Get from [@BotFather](https://t.me/BotFather))
-- Heroku Account (Free tier works)
-- OpenAI API Key (Optional, for GPT-3.5)
-
-### 2. Deploy to Heroku
-Click the button below to deploy instantly:  
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SAURABHKUMARCHAUHAN1203/plagiarism-remover-bot)
-
-#### Manual Deployment (CLI)
-```sh
+## Manual Setup
+```bash
 git clone https://github.com/SAURABHKUMARCHAUHAN1203/plagiarism-remover-bot.git
 cd plagiarism-remover-bot
 heroku create
-heroku config:set TELEGRAM_TOKEN="YOUR_BOT_TOKEN" OPENAI_API_KEY="YOUR_OPENAI_KEY" APP_NAME="your-app-name"
-git push heroku master
+heroku config:set TELEGRAM_TOKEN="xxx" OPENAI_API_KEY="yyy"
+git push heroku main
