@@ -5,8 +5,5 @@ language-tool-python==2.7
 flask==2.2.3
 gunicorn==20.1.0
 
-# PyTorch (CPU-only)
-torch==1.13.1+cpu --index-url https://download.pytorch.org/whl/cpu
-
-# Optional
-openai==0.27.8; python_version >= '3.7'
+# Updated PyTorch installation line:
+torch==2.0.1 --index-url https://download.pytorch.org/whl/cpu
